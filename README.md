@@ -1,47 +1,31 @@
-# PosTech-FIAP-Entrega-04
+# 🚀 PosTech-FIAP-Entrega-04 – Análise de Vídeo com Reconhecimento Facial, Emoções e Detecção de Atividades
 
+Este projeto tem como objetivo a criação de uma aplicação que realiza a **análise automática de vídeos** utilizando técnicas de:
+- Reconhecimento Facial 🧑‍💻
+- Análise de Emoções 😃😢😠
+- Detecção de Atividades 🏃‍♂️🧍
+- Geração de Relatórios e Gráficos 📊
 
-## Apresentação 
-https://prezi.com/view/EeNrffgyfjCEKJ0Mr2LX/
+## 🎥 Demonstração e Material de Apoio
+- [Apresentação Interativa (Prezi)](https://prezi.com/view/EeNrfgyfjCEKJ0MzLX/)
+- [Download do Vídeo de Exemplo](https://drive.google.com/file/d/1B5PfzZdUDi-7Ac7BK3a3WdNppfQgM_Ne/view?usp=drive_link)
 
+---
 
-## Link Video para Download
-https://drive.google.com/file/d/1B5PbZdUDi-r7Ac7BK3a3WdNppfQqM_Ne/view?usp=drive_link
+## ⚙️ Funcionalidades
+- Detecta rostos e analisa emoções (Feliz, Triste, Neutro, Bravo, Surpreso, Medo, Nojo).
+- Identifica atividades como **Movimento** e **Parado**.
+- Detecta anomalias (exemplo: presença de muitas pessoas no frame).
+- Gera gráficos interativos:
+  - **Gráfico de Pizza** – Distribuição de Emoções.
+  - **Gráfico de Barras** – Atividades detectadas.
+  - **Resumo Geral** – Emoções, atividades e anomalias.
+- Produz relatório em texto com as estatísticas.
 
-# Antes de iniciar o codigo precisamos seguir os passos abaixo;
+---
 
-## Instalação das bibliotecas
-pip install opencv-python
-pip install face-recognition
-pip install deepface
-pip install mediapipe
-pip install matplotlib
-pip install tqdm
+## 🛠️ Instalação das Dependências
 
-## Para facilitar execute o comando abaixo com todas as libs juntas;
-
+### Instalar bibliotecas no ambiente Python:
+```bash
 pip install opencv-python face-recognition deepface mediapipe matplotlib tqdm
-
-## Caso tenha MAC pode ter um possivel problema com face-recognition então instale o brew:
-brew install cmake
-brew install libomp
-
-## Caso rodar no Linux
-sudo apt-get install build-essential cmake
-sudo apt-get install libopenblas-dev liblapack-dev
-sudo apt-get install libx11-dev libgtk-3-dev
-
-## Caso rodar no Windows
-Pode ser necessário instalar o Visual Studio Build Tools se der erro ao instalar o face-recognition:
-	•	Baixe em: https://visualstudio.microsoft.com/visual-cpp-build-tools/
-
-
-
-## Altera o caminho de origem do video baixado
-video_path = '/caminho origem XXXXXXX /Unlocking Facial Recognition_ Diverse Activities Analysis.mp4'
-
-## Alterar o caminho de destino do relatorio gerado.
-relatorio_path = "/caminho origem XXXXXXX/relatorio_video.txt"
-
-## Caso for rodar o codigo via cli chamando o arquivo;
-python nome_do_arquivo.py
