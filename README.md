@@ -29,3 +29,99 @@ Este projeto tem como objetivo a criação de uma aplicação que realiza a **an
 ### Instalar bibliotecas no ambiente Python:
 ```bash
 pip install opencv-python face-recognition deepface mediapipe matplotlib tqdm
+```
+
+### Caso tenha MacOS e ocorra erro ao instalar face-recognition:
+```
+brew install cmake libomp
+```
+
+### Caso esteja em Linux:
+```
+sudo apt-get install build-essential cmake
+sudo apt-get install libopenblas-dev liblapack-dev
+sudo apt-get install libx11-dev libgtk-3-dev
+```
+
+### Caso esteja em Windows e tenha erro ao instalar face-recognition:
+
+- Baixe e instale [Visual Studio Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+
+📂 Como Executar o Projeto
+
+ 1.	Faça o download do vídeo de exemplo: [click Aqui](https://drive.google.com/file/d/1B5PfzZdUDi-7Ac7BK3a3WdNppfQgM_Ne/view?usp=drive_link)
+ 2.	Ajuste os caminhos no código para o vídeo e o relatório:
+     ```
+    video_path = "/caminho/para/Unlocking Facial Recognition_ Diverse Activities Analysis.mp4"
+    relatorio_path = "/caminho/para/relatorio_video.txt"
+    ```
+ 3.	Execute o script:
+    ```
+    python nome_do_arquivo.py
+    ```
+    
+🧪 Exemplo de Saída Esperada
+
+Exemplo do Relatório Gerado:
+```
+Total de frames analisados: 2400
+Número de anomalias detectadas: 12
+
+Emoções detectadas:
+- Happy: 120 vezes
+- Neutral: 300 vezes
+- Sad: 45 vezes
+
+Atividades detectadas:
+- Movimento: 1500 frames
+- Parado: 900 frames
+```
+
+📊 Visualização Gráfica
+
+Após a execução, serão exibidos os seguintes gráficos:
+
+	•	Gráfico de Pizza: Distribuição das Emoções.
+	•	Gráfico de Barras: Atividades (Movimento e Parado).
+	•	Resumo Geral: Emoções predominantes, atividades predominantes e anomalias detectadas.
+
+
+ 🧑‍💻 Tecnologias Utilizadas
+ 
+	•	Python 3.11
+	•	OpenCV – Processamento de imagens e vídeos.
+	•	Face Recognition – Detecção e reconhecimento facial.
+	•	DeepFace – Análise de emoções faciais.
+	•	MediaPipe – Detecção de posturas e movimentos corporais.
+	•	Matplotlib – Visualização de gráficos.
+	•	TQDM – Barra de progresso para monitorar o processamento.
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
